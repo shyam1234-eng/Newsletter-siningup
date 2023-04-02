@@ -3,6 +3,7 @@ const bodyParser = require("body-parser");
 const request = require("request");
 const https = require("https");
 const { url } = require("inspector");
+const PORT = process.env.PORT ||4000;
 
 
 const app = express();
@@ -64,7 +65,7 @@ app.post("/failure", function (req, res) {
 
 
 
-app.listen(4000, function () {
+app.listen(PORT, function () {
   console.log("server is running on port 4000...")
 });
 
