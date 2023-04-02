@@ -34,7 +34,7 @@ app.post("/", function (req, res) {
 
   const jsonData = JSON.stringify(data);
 
-  const url = "https://us18.api.mailchimp.com/3.0/lists/42850d2b7f.";
+  const url = "https://us18.api.mailchimp.com/3.0/lists/42850d2b7f";
   const options = {
     mehtod: "post",
     auth: "shyam1:63c5ff43752c764bf783f3ff4a2842a3-us18"
@@ -73,4 +73,4 @@ app.listen(PORT, function () {
 // 63c5ff43752c764bf783f3ff4a2842a3-us18
 
 // LIST ID
-// 42850d2b7f.
+// 42850d2b7f
